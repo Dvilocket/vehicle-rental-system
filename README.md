@@ -39,7 +39,7 @@ Antes de ejecutar el proyecto es necesario tener instalado:
 ## 1. Clonar repositorio
 
 ```bash
-git clone https://github.com/TU-USUARIO/vehicle-rental-systemPublic.git
+git clone https://github.com/TU-USUARIO/vehicle-rental-system.git
 ```
 
 ---
