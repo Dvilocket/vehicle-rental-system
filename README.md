@@ -1,16 +1,151 @@
-# React + Vite
+# 🚗 Vehicle Rental System - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Front-End desarrollado con React para la gestión de alquiler de vehículos consumiendo una arquitectura basada en microservicios con Spring Boot.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 📋 Requisitos
 
-## React Compiler
+Antes de ejecutar el proyecto es necesario tener instalado:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js
+- npm
+- Docker Desktop
+- Git
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# ⚙️ Tecnologías Utilizadas
+
+## Front-End
+- React
+- Vite
+- React Router DOM
+- Axios
+- Bootstrap
+- SweetAlert2
+
+## Back-End
+- Spring Boot
+- Spring Cloud Gateway
+- Eureka Server
+- PostgreSQL
+- Docker Compose
+
+---
+
+# 📦 Instalación Front-End
+
+## 1. Clonar repositorio
+
+```bash
+git clone https://github.com/TU-USUARIO/vehicle-rental-frontend.git
+```
+
+---
+
+## 2. Entrar al proyecto
+
+```bash
+cd vehicle-rental-frontend
+```
+
+---
+
+## 3. Instalar dependencias
+
+```bash
+npm install
+```
+
+---
+
+# 🚀 Ejecutar Front-End
+
+```bash
+npm run dev
+```
+
+El proyecto estará disponible en:
+
+```bash
+http://localhost:5173
+```
+
+---
+
+# 🔌 IMPORTANTE - Backend Requerido
+
+Este Front-End necesita que el backend de microservicios esté ejecutándose.
+
+El API Gateway debe correr en:
+
+```bash
+http://localhost:8080
+```
+
+---
+
+# 🐳 Ejecutar Backend
+
+Dentro del proyecto backend ejecutar:
+
+```bash
+docker compose up --build
+```
+
+Esperar a que levanten:
+
+- Eureka Server
+- Gateway Service
+- Vehicle Service
+- Operation Service
+- PostgreSQL
+
+---
+
+# ✅ Verificar Backend
+
+Abrir en navegador:
+
+```bash
+http://localhost:8080/api/vehicles
+```
+
+Si devuelve JSON, el backend está funcionando correctamente.
+
+---
+
+# 📂 Funcionalidades Implementadas
+
+## Gestión de Vehículos
+- Listar vehículos
+- Ver detalle
+- Crear vehículo
+- Editar vehículo
+- Eliminar vehículo
+- Cambiar estado
+
+## Gestión de Operaciones
+- Registrar alquiler
+- Cancelar operación
+- Actualizar disponibilidad
+
+---
+
+# ⚛️ Características React
+
+- React Router DOM
+- Hooks
+- Custom Hook
+- Componentes reutilizables
+- Axios
+- Formularios controlados
+- SweetAlert2
+- Bootstrap responsive
+
+---
+
+# 👨‍💻 Autor
+
+Proyecto desarrollado para la asignatura de Desarrollo de Aplicaciones Web.
